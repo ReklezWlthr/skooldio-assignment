@@ -6,12 +6,12 @@ export const Faculty = ({ data }) => {
         alt="Engineering Icon"
         className="w-[100px] h-[100px] shrink-0"
       />
-      <div className="pt-[5px] w-full pl-[10px]">
-        <p className="text-2xl font-[600] text-grape-fruit line-clamp-1">
-          {data.name}
-        </p>
-        <p className="pt-1 pb-6 text-warm-gray leading-[0.8]">
+      <div className="pt-[11px] w-full px-[10px]">
+        <p className="text-2xl font-[600] text-grape-fruit leading-[0.68]">
           {data.faculty.name}
+        </p>
+        <p className="pt-2 pb-6 text-warm-gray leading-[0.8] font-[500]">
+          {data.name}
         </p>
         <p className="text-warm-gray leading-[0.8]">
           {data.faculty.university.name}

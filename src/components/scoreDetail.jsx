@@ -1,3 +1,5 @@
+import { beautifyNumber } from "../utils/converter";
+
 export const ScoreDetail = ({ data }) => {
   return (
     <div className="pr-4 mt-3">
@@ -12,32 +14,21 @@ export const ScoreDetail = ({ data }) => {
         <img src="/badge.svg" alt="Badge" />
         <div className="flex flex-col items-end text-[#4a4a4a]">
           <p className="font-[300] text-xs">คะแนนของคุณคือ</p>
+          {/* Cannot find data in JSON */}
           <p className="text-[43px] font-[300] -mt-[7px]">25,453</p>
         </div>
       </div>
-      <div className="grid grid-cols-3 divide-x-[1.4px] divide-[#d8d8d8] text-[#5f5f5f] mt-[14px]">
+      <div className="grid grid-cols-3 divide-x-[1.4px] divide-[#d8d8d8] text-[#5f5f5f] mt-[14px] leading-[16.8px] h-[46px]">
         <div className="flex flex-col items-center">
-          <p className="text-[19.6px]">
-            {data.score?.min?.toLocaleString(undefined, {
-              maximumFractionDigits: 0,
-            }) || "-"}
-          </p>
+          <p className="text-[19.6px]">{beautifyNumber(data.score?.min)}</p>
           <p className="text-[11.2px]">คะแนนต่ำสุด 60</p>
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-[19.6px]">
-            {data.score?.avg?.toLocaleString(undefined, {
-              maximumFractionDigits: 0,
-            }) || "-"}
-          </p>
+          <p className="text-[19.6px]">{beautifyNumber(data.score?.avg)}</p>
           <p className="text-[11.2px]">คะแนนเฉลี่ย 60</p>
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-[19.6px]">
-            {data.score?.max?.toLocaleString(undefined, {
-              maximumFractionDigits: 0,
-            }) || "-"}
-          </p>
+          <p className="text-[19.6px]">{beautifyNumber(data.score?.max)}</p>
           <p className="text-[11.2px]">คะแนนสูงสุด 60</p>
         </div>
       </div>

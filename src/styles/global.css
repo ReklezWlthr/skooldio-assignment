@@ -9,4 +9,11 @@
     font-family: Prompt;
     background-color: #f3f3f3;
   }
+
+  .Triangle {
+    width: 9px;
+    height: 14px;
+    margin: 18.5px 18.5px 21.5px 2.5px;
+    background-color: #48b6a3;
+  }
 }
