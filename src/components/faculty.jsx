@@ -1,19 +1,21 @@
-export const Faculty = () => {
+export const Faculty = ({ data }) => {
   return (
     <div className="flex items-start pt-px px-3">
       <img
-        src="/engi.svg"
+        src={data.logo}
         alt="Engineering Icon"
-        className="px-[10px] py-[7px]"
+        className="w-[100px] h-[100px] shrink-0"
       />
-      <div className="pt-[11px] w-full pl-[10px]">
-        <p className="text-2xl font-[600] text-grape-fruit leading-[0.67]">
-          คณะวิศวกรรมศาสตร์
+      <div className="pt-[5px] w-full pl-[10px]">
+        <p className="text-2xl font-[600] text-grape-fruit line-clamp-1">
+          {data.name}
         </p>
-        <p className="pt-2 pb-6 text-warm-gray leading-[0.8]">
-          สาขาวิศวกรรมทั่วไป
+        <p className="pt-1 pb-6 text-warm-gray leading-[0.8]">
+          {data.faculty.name}
         </p>
-        <p className="text-warm-gray leading-[0.8]">จุฬาลงกรณ์มหาวิทยาลัย</p>
+        <p className="text-warm-gray leading-[0.8]">
+          {data.faculty.university.name}
+        </p>
       </div>
       <img src="/heart.svg" alt="Heart" className="pt-[9px] pr-1" />
     </div>

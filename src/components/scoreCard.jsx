@@ -1,5 +1,6 @@
 import { Faculty } from "./faculty";
 import { Round } from "./round";
+import { ScoreDetail } from "./scoreDetail";
 
 export const ScoreCard = ({ data }) => {
   return (
@@ -7,6 +8,7 @@ export const ScoreCard = ({ data }) => {
       <Faculty data={data} />
       <div className="h-[3px] bg-[#d8d8d8] mt-[13px] mb-[14px] mx-5" />
       <Round data={data.roundSeats} />
+      <ScoreDetail data={data} />
     </div>
   );
 };
