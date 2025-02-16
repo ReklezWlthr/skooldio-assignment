@@ -10,8 +10,8 @@ export const ScoreCard = ({ data }) => {
       <Round data={data.roundSeats} />
       <ScoreDetail data={data} />
       <div className="h-[1px] bg-[#d8d8d8] mt-[8px] mb-[17px] mx-5" />
-      <div className="text-[#48b6a3] pl-[22.5px] cursor-pointer">
-        {/* Missing asset */}
+      <div className="text-[#48b6a3] pl-[22.5px] cursor-pointer flex items-center gap-x-[18.5px]">
+        <div className="Triangle"></div>
         <p className="font-[300]">ดูสัดส่วนคะแนน</p>
       </div>
       <div className="h-[1px] bg-[#d8d8d8] mt-[21px] mb-[10px] mx-5" />
