@@ -1,12 +1,14 @@
+import "./styles/global.css";
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import { ScoreCard } from "./components/scoreCard";
+import { CardList } from "./components/cardList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ScoreCard />
+    <CardList />
   </React.StrictMode>
 );
 
