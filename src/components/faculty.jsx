@@ -13,7 +13,7 @@ export const Faculty = ({ data }) => {
         <p className="pt-2 pb-6 text-warm-gray leading-[0.8] font-[500]">
           {data.name}
         </p>
-        <p className="text-warm-gray leading-[0.8]">
+        <p className="text-warm-gray leading-[0.8] font-[300]">
           {data.faculty.university.name}
         </p>
       </div>
