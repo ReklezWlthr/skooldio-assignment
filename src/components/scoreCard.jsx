@@ -10,7 +10,7 @@ export const ScoreCard = ({ data }) => {
       <Round data={data.roundSeats} />
       <ScoreDetail data={data} />
       <div className="h-[1px] bg-[#d8d8d8] mt-[8px] mb-[17px] mx-5" />
-      <div className="text-[#48b6a3] pl-[22.5px]">
+      <div className="text-[#48b6a3] pl-[22.5px] cursor-pointer">
         {/* Missing asset */}
         <p className="font-[300]">ดูสัดส่วนคะแนน</p>
       </div>
@@ -21,7 +21,7 @@ export const ScoreCard = ({ data }) => {
           {/* Cannot find data in JSON */}
           10 <i>คนที่สนใจ</i>
         </p>
-        <img src="/share.svg" alt="Share" />
+        <img src="/share.svg" alt="Share" className="cursor-pointer" />
       </div>
     </div>
   );
